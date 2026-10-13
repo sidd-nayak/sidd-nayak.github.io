@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-  <img src="IMG_9634 3.JPG" alt="Siddhanth Nayak" style="width: 100%; max-width: 200px; border-radius: 6px; margin-bottom: 1.25rem; display: block;"/>
   <title>Siddhanth Nayak</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -405,6 +404,42 @@
     }
     .course-panel li strong { color: var(--text); font-weight: 500; }
 
+    /* Interests */
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .interest-card img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+    .interest-card h4 {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .interest-card p {
+      font-size: 0.78rem;
+      color: var(--sub);
+      line-height: 1.6;
+    }
+    .interest-card-text {
+      padding: 1.25rem;
+      background: var(--accent-dim);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     /* Contact */
     #contact p {
       font-size: 0.88rem;
@@ -448,6 +483,7 @@
 
   <aside class="sidebar">
     <div class="sidebar-top">
+      <img src="IMG_9634 4.JPG" alt="Siddhanth Nayak" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; object-position: center top; display: block; margin: 0 auto 1.25rem; border: 2px solid var(--border);"/>
       <h1>Siddhanth Nayak</h1>
       <p class="tagline">Bioengineering &amp; Electrical Engineering undergraduate at UC Berkeley. Check out my <a href="https://drive.google.com/file/d/165V200qc4cI9VGxFcfDcXNUjlAolsXTV/view?usp=sharing" target="_blank">Resume</a>, <a href="https://www.linkedin.com/in/siddhanth-nayak" target="_blank">LinkedIn</a>, or <a href="https://github.com/sidd-nayak" target="_blank">GitHub</a>, or reach me at siddhanthnayak@berkeley.edu</p>
       <nav id="site-nav">
@@ -456,6 +492,7 @@
         <a href="#projects">Projects</a>
         <a href="#coursework">Coursework</a>
         <a href="#skills">Skills</a>
+        <a href="#interests">Interests</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -685,6 +722,35 @@
           <h4>Research</h4>
           <ul><li>Biomedical Device Design</li><li>Clinical Research Methods</li><li>Pipeline Development</li><li>Scientific Writing</li></ul>
         </div>
+      </div>
+    </section>
+
+    <!-- Personal Interests -->
+    <section id="interests">
+      <div class="section-label">Personal Interests</div>
+      <div class="interests-grid">
+
+        <div class="interest-card">
+          <!-- Replace "your-photo.jpg" with the actual filename you upload to GitHub -->
+          <img src="your-photo.jpg" alt="Interest 1" onerror="this.style.display='none'"/>
+          <h4>Interest Title</h4>
+          <p>A short description of this interest and what it means to you.</p>
+        </div>
+
+        <div class="interest-card">
+          <img src="your-photo-2.jpg" alt="Interest 2" onerror="this.style.display='none'"/>
+          <h4>Interest Title</h4>
+          <p>A short description of this interest and what it means to you.</p>
+        </div>
+
+        <div class="interest-card">
+          <img src="your-photo-3.jpg" alt="Interest 3" onerror="this.style.display='none'"/>
+          <h4>Interest Title</h4>
+          <p>A short description of this interest and what it means to you.</p>
+        </div>
+
+        <!-- Add more cards by copying the block above -->
+
       </div>
     </section>
 
